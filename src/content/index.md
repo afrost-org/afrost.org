@@ -5,6 +5,7 @@ intro_image_absolute: true
 intro_image_hide_on_mobile: true
 ---
 
-# Serif - A Gatsby Business Theme.
-
-Serif contains content types for a typical business website. The theme is fully responsive, blazing fast and artfully illustrated.
+# Creating India’s future Open Source Leaders!
+<!-- Font Missing in ## when # font size increase. Need to be fixed later -->
+<!-- By nurturing talent, building communities and forging partnerships. -->
+Learn ﹒ Connect ﹒ Mentor
