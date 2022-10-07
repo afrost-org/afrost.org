@@ -32,11 +32,10 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-cloudflare-web-analytics`,
       options: {
-        trackingId: guid || 'UA-XXX-1',
-        // Puts tracking script in the head instead of the body
-        head: false
+        // You need to provide your site token. You get this from the Cloudflare dashboard
+        token: "a0d76b86a47b4d388c1eb43aac166524"
       }
     },
     {
