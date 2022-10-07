@@ -21,6 +21,7 @@
     },
     "footer": {
         "copyright_text": "",
-        "copyright_link": "https://afrost.org"
+        "copyright_link": "https://afrost.org",
+        "copyright_link_text": "afrost.org"
     }
 }

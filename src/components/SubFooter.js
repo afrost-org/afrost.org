@@ -9,6 +9,7 @@ const SubFooter = props => {
         footer {
           copyright_text
           copyright_link
+          copyright_link_text
         }
       }
     }
@@ -23,7 +24,7 @@ const SubFooter = props => {
               <div className="copyright">
                 <span>{data.configJson.footer.copyright_text}</span>
                 {data.configJson.footer.copyright_link && (
-                  <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link}</a>
+                  <a href={data.configJson.footer.copyright_link}>{data.configJson.footer.copyright_link_text}</a>
                 )}
               </div>
             </div>
