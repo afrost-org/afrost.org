@@ -1,17 +1,12 @@
 [
   {
     "title": "Pycon India",
-    "description": "Working as a secretariate for Pycon India community Event ",
+    "description": "Helping  Pycon India community Event ",
     "image": "/images/features/PyCon_India.png"
   },
   {
-    "title": "Certified Accountants",
-    "description": "All members of our team are certified accountants.",
-    "image": "/images/features/noun_The Process_1885341.svg"
-  },
-  {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "/images/features/noun_3d modeling_1885342.svg"
+    "title": "Pyconf Hyderabad",
+    "description": "Helping Pyconf Hyderabad Community event  ",
+    "image": "/images/features/PyConf_Hyderabad.png"
   }
 ]
