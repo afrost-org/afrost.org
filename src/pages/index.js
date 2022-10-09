@@ -70,15 +70,17 @@ const Home = props => {
             <div className="row justify-content-center">
               {features.map(({ node }) => (
                 <div key={node.id} className="col-12 col-md-6 col-lg-4 mb-2">
-                  <div className="feature">
-                    {node.image && (
-                      <div className="feature-image">
-                        <img src={node.image} />
-                      </div>
-                    )}
-                    <h2 className="feature-title">{node.title}</h2>
-                    <div className="feature-content">{node.description}</div>
-                  </div>
+                  <a href={node.extlink}>
+                    <div className="feature">
+                      {node.image && (
+                        <div className="feature-image">
+                          <img src={node.image} />
+                        </div>
+                      )}
+                      <h2 className="feature-title">{node.title}</h2>
+                      <div className="feature-content">{node.description}</div>
+                    </div>
+                  </a>
                 </div>
               ))}
             </div>
@@ -129,6 +131,7 @@ export const query = graphql`
           title
           description
           image
+          extlink
         }
       }
     }

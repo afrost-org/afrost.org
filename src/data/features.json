@@ -2,11 +2,13 @@
   {
     "title": "Pycon India",
     "description": "Helping  Pycon India community Event ",
-    "image": "/images/features/PyCon_India.png"
+    "image": "/images/features/PyCon_India.png",
+    "extlink": "https://in.pycon.org"
   },
   {
     "title": "Pyconf Hyderabad",
     "description": "Helping Pyconf Hyderabad Community event  ",
-    "image": "/images/features/PyConf_Hyderabad.png"
+    "image": "/images/features/PyConf_Hyderabad.png",
+    "extlink": "https://pyconf.hydpy.org/2022/"
   }
 ]
