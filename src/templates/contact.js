@@ -7,14 +7,26 @@ import Call from '../components/Call';
 const Contact = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
   const { html } = data.markdownRemark;
+  const { intro_image } = data.markdownRemark.frontmatter;
+  const { intro_image_absolute } = data.markdownRemark.frontmatter;
+  const { intro_image_hide_on_mobile } = data.markdownRemark.frontmatter;
+
+  const introImageClasses = `intro-image ${intro_image_absolute && 'intro-image-absolute'} ${intro_image_hide_on_mobile && 'intro-image-hide-mobile'}`;
+
   return (
     <Layout bodyClass="page-default-single">
-      <div className="container pb-6 pt-6 pt-md-10 pb-md-10">
-        <div className="row justify-content-start">
-          <div className="col-12 col-md-8">
-            <h1 className="title">{title}</h1>
-            <Call showButton={false} />
-            <div className="content mt-4" dangerouslySetInnerHTML={{ __html: html }} />
+      <SEO title={title} />
+      <div className="intro">
+        <div className="container">
+          <div className="row justify-content-start">
+            <div className="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+              <div dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
+            {intro_image && (
+              <div className="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt={title} className={introImageClasses} src={intro_image} />
+              </div>
+            )}
           </div>
         </div>
       </div>
@@ -28,6 +40,9 @@ export const query = graphql`
       frontmatter {
         title
         path
+        intro_image
+        intro_image_absolute
+        intro_image_hide_on_mobile
       }
       fields {
         slug
