@@ -2,7 +2,9 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
-import Call from '../components/Call';
+//import Call from '../components/Call';
+import Hubspot from '../components/Hubspot';
+import { Helmet } from 'react-helmet';
 
 const Contact = ({ data }) => {
   const { title } = data.markdownRemark.frontmatter;
@@ -27,6 +29,10 @@ const Contact = ({ data }) => {
                 <img alt={title} className={introImageClasses} src={intro_image} />
               </div>
             )}
+          </div>
+          <div className='contactInfo'>
+            {/* <Call showButton="true"></Call> */}
+            <Hubspot />
           </div>
         </div>
       </div>
