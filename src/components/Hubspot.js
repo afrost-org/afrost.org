@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import { Helmet } from "react-helmet";
+import React from "react";
 
 class Hubspot extends React.Component {
     constructor(props) {
