@@ -1,13 +1,19 @@
 [
   {
     "title": "Pycon India",
-    "description": "Helping  Pycon India community Event ",
+    "description": "Helping Pycon India community Event",
     "image": "/images/features/PyCon_India.png",
     "extlink": "https://in.pycon.org"
   },
   {
+    "title": "PyDelhi Conf",
+    "description": "Helping PyDelhi Conf community Event",
+    "image": "/images/features/PyDelhi_Conf.png",
+    "extlink": "https://conference.pydelhi.org/"
+  },
+  {
     "title": "Pyconf Hyderabad",
-    "description": "Helping Pyconf Hyderabad Community event  ",
+    "description": "Helping Pyconf Hyderabad Community event",
     "image": "/images/features/PyConf_Hyderabad.png",
     "extlink": "https://pyconf.hydpy.org/2022/"
   }
