@@ -15,7 +15,6 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "gatsby": "^3.12.0",
-    "gatsby-cli": "^5.13.3",
     "gatsby-plugin-cloudflare-web-analytics": "^0.3.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-react-helmet": "^4.12.0",
