@@ -8,5 +8,21 @@
         "name": "Contact",
         "url": "/contact/",
         "weight": 2
+    },
+    {
+        "name": "Terms",
+        "url": "/Terms/",
+        "weight": 3
+    },
+    {
+        "name": "Privacy Policy",
+        "url": "/Privacy/",
+        "weight": 4
+    },
+    {
+        "name": "Refund Policy",
+        "url": "/Refund/",
+        "weight": 5
     }
+
 ]
