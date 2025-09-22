@@ -32,10 +32,20 @@ jobs:
     - name: Build Gatsby site
       run: npm run build
 
-    - name: Publish to Cloudflare Pages
-      uses: cloudflare/pages-action@v1.5.0
+    # - name: Publish to Cloudflare Pages
+    #   uses: cloudflare/pages-action@v1.5.0
+    #   with:
+    #     apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+    #     accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    #     projectName: afrost-org
+    #     directory: public
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+    - name: Deploy
+      uses: cloudflare/wrangler-action@v3
       with:
         apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        projectName: afrost-org
-        directory: public
+        command: pages deploy public --project-name=recruit
