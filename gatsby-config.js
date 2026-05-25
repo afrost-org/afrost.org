@@ -5,7 +5,7 @@ module.exports = {
     title: 'Afrost',
     description: 'Creating India’s future Open Source Leaders!',
     siteUrl: 'https://afrost.org',
-    image: '/images/logo/logo.svg'
+    image: '/images/logo/og-image.png'
   },
   plugins: [
     'gatsby-plugin-sass',
