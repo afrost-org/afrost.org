@@ -3,7 +3,9 @@ const guid = process.env.NETLIFY_GOOGLE_ANALYTICS_ID;
 module.exports = {
   siteMetadata: {
     title: 'Afrost',
-    description: 'Creating Indias future Open Source Leaders!'
+    description: 'Creating India’s future Open Source Leaders!',
+    siteUrl: 'https://afrost.org',
+    image: '/images/logo/logo.svg'
   },
   plugins: [
     'gatsby-plugin-sass',

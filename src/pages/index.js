@@ -1,6 +1,5 @@
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import Helmet from 'react-helmet';
 import SEO from '../components/SEO';
 import Layout from '../components/Layout';
 import Call from '../components/Call';
@@ -14,13 +13,7 @@ const Home = props => {
 
   return (
     <Layout bodyClass="page-home">
-      <SEO title={site.title} />
-      <Helmet>
-        <meta
-          name="description"
-          content="Small Business Theme. Multiple content types using Markdown and JSON sources. Responsive design and SCSS. This is a beautiful and artfully designed starting theme."
-        />
-      </Helmet>
+      <SEO />
 
       <div className="intro">
         <div className="container">
